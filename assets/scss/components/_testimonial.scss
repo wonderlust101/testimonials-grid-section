@@ -1,8 +1,15 @@
 .testimonial {
-
   padding: 2rem;
+  position: relative;
+  z-index: 1;
   border-radius: 0.5rem;
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+
+  &__background-icon {
+    position: absolute;
+    z-index: -1;
+    right: 5rem;
+  }
 
   &__author {
     display: flex;
