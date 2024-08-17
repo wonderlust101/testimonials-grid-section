@@ -3,3 +3,17 @@
 :root {
   @include a.map-to-root(clr, a.$colors);
 }
+
+body {
+  display: grid;
+  margin: 4.5rem 0;
+  background-color: #ECF2F8;
+
+  & > * {
+    place-self: center;
+  }
+
+  @include a.breakpoint(medium) {
+    margin: 0;
+  }
+}

@@ -1,0 +1,23 @@
+@use '../abstract' as a;
+
+.testimonial-grid {
+  @include a.set-grid-areas(a,b,c,d,e);
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  width: min(90%,87.5rem);
+
+  @include a.breakpoint(medium) {
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+            'a a b'
+            'c d d'
+            'e e e';
+  }
+
+  @include a.breakpoint(large) {
+    grid-template-areas:
+            'a a b e'
+            'c d d e';
+  }
+}

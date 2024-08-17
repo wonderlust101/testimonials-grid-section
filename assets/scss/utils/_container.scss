@@ -1,0 +1,17 @@
+.container {
+  &-purple {
+    background-color: var(--clr-container-color-purple);
+  }
+
+  &-grey {
+    background-color: var(--clr-container-color-grey);
+  }
+
+  &-black {
+    background-color: var(--clr-container-color-black);
+  }
+
+  &-white {
+    background-color: var(--clr-container-color-white);
+  }
+}
